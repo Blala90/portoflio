@@ -5,39 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adam El Omri — Étudiant en BUT R&T</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
 
   <header>
     <nav>
-      <a href="#" class="logo">Adam <span>El Omri</span></a>
+      <a href="#" class="logo"><i data-lucide="terminal"></i> Adam <span>El Omri</span></a>
       <ul class="nav-links">
         <li><a href="#apropos">À propos</a></li>
         <li><a href="#apprentissage">Apprentissage</a></li>
         <li><a href="#projets">Projets</a></li>
         <li><a href="#parcours">Parcours</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="index-en.html" class="lang-btn">EN</a></li>
+        <li><a href="index-en.html" class="lang-btn"><i data-lucide="globe"></i> EN</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="badge"><span class="dot"></span> 1ère année BUT Réseaux & Télécommunications</div>
-      <h1>Adam El Omri</h1>
-      <p>
-        Étudiant à l'IUT de Béziers (Université de Montpellier). Curieux de comprendre comment fonctionnent 
-        les réseaux, les systèmes informatiques et la cybersécurité de l'intérieur.
-      </p>
-      <div class="cta-group">
-        <a href="#apprentissage" class="btn btn-primary">Découvrir mon profil</a>
-        <a href="#contact" class="btn btn-secondary">Me contacter</a>
+    <section class="hero reveal">
+      <div>
+        <div class="badge"><span class="dot"></span> 1ère année BUT Réseaux & Télécommunications</div>
+        <h1>Adam El Omri</h1>
+        <p>
+          Étudiant à l'IUT de Béziers (Université de Montpellier). Curieux de comprendre comment fonctionnent
+          les réseaux, les systèmes informatiques et la cybersécurité de l'intérieur.
+        </p>
+        <div class="cta-group">
+          <a href="#apprentissage" class="btn btn-primary"><i data-lucide="compass"></i> Découvrir mon profil</a>
+          <a href="#contact" class="btn btn-secondary"><i data-lucide="mail"></i> Me contacter</a>
+        </div>
+      </div>
+
+      <div class="terminal-card">
+        <div class="terminal-header">
+          <span class="t-dot t-red"></span>
+          <span class="t-dot t-yellow"></span>
+          <span class="t-dot t-green"></span>
+          <span class="t-title">adam@iut-beziers: ~</span>
+        </div>
+        <div class="terminal-body">
+          <div><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></div>
+          <div class="t-out">Adam El Omri — Étudiant BUT R&T</div>
+          <div><span class="t-prompt">$</span> <span class="t-cmd">cat objectifs.txt</span></div>
+          <div class="t-out">→ Réseaux & Infrastructures</div>
+          <div class="t-out">→ Administration Linux</div>
+          <div class="t-out">→ Cybersécurité & Cloud</div>
+          <div><span class="t-prompt">$</span> <span class="t-cmd">status</span></div>
+          <div class="t-out">En cours d'apprentissage (Semestre 1) <span class="t-cursor"></span></div>
+        </div>
       </div>
     </section>
 
-    <section id="apropos">
-      <h2>À propos</h2>
+    <section id="apropos" class="reveal">
+      <div class="section-header">
+        <i data-lucide="user"></i>
+        <h2>À propos</h2>
+      </div>
       <p class="section-sub">Mon parcours et ce qui m'a amené en Réseaux & Télécommunications.</p>
       <div class="card">
         <p>
@@ -50,11 +77,15 @@
       </div>
     </section>
 
-    <section id="apprentissage">
-      <h2>En cours d'acquisition</h2>
+    <section id="apprentissage" class="reveal">
+      <div class="section-header">
+        <i data-lucide="book-open"></i>
+        <h2>En cours d'acquisition</h2>
+      </div>
       <p class="section-sub">Les bases que je découvre et pratique actuellement en 1ère année de BUT.</p>
       <div class="grid">
         <div class="card">
+          <div class="icon-box"><i data-lucide="network"></i></div>
           <span class="card-label">Découverte</span>
           <h3>Réseaux & Télécoms</h3>
           <ul>
@@ -64,6 +95,7 @@
           </ul>
         </div>
         <div class="card">
+          <div class="icon-box"><i data-lucide="server"></i></div>
           <span class="card-label">Pratique en TP</span>
           <h3>Systèmes & Linux</h3>
           <ul>
@@ -73,6 +105,7 @@
           </ul>
         </div>
         <div class="card">
+          <div class="icon-box"><i data-lucide="code-2"></i></div>
           <span class="card-label">Bases</span>
           <h3>Web & Programmation</h3>
           <ul>
@@ -84,51 +117,68 @@
       </div>
     </section>
 
-    <section id="projets">
-      <h2>Projets & Travaux</h2>
+    <section id="projets" class="reveal">
+      <div class="section-header">
+        <i data-lucide="folder-git-2"></i>
+        <h2>Projets & Travaux</h2>
+      </div>
       <p class="section-sub">Quelques réalisations concrètes effectuées au lycée et en début de BUT.</p>
       <div class="grid">
-        <div class="card">
-          <span class="card-label">Projet Terminale STI2D</span>
-          <h3>Prototype de dirigeable piloté en Wi-Fi</h3>
-          <p>
-            Conception en équipe d'un mini-dirigeable contrôlé à distance via un microcontrôleur ESP32 
-            et une petite interface Android, présenté au baccalauréat.
-          </p>
-          <div class="tags">
-            <span class="tag">ESP32</span>
-            <span class="tag">Arduino</span>
-            <span class="tag">Wi-Fi</span>
-            <span class="tag">Électronique</span>
+        <div class="card project-card">
+          <div class="project-img-wrap">
+            <img class="project-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Circuit électronique et microcontrôleur">
+          </div>
+          <div class="project-content">
+            <span class="card-label">Projet Terminale STI2D</span>
+            <h3>Prototype de dirigeable piloté en Wi-Fi</h3>
+            <p>
+              Conception en équipe d'un mini-dirigeable contrôlé à distance via un microcontrôleur ESP32
+              et une petite interface Android, présenté au baccalauréat.
+            </p>
+            <div class="tags">
+              <span class="tag">ESP32</span>
+              <span class="tag">Arduino</span>
+              <span class="tag">Wi-Fi</span>
+              <span class="tag">Électronique</span>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <span class="card-label">SAÉ 104 — IUT Béziers</span>
-          <h3>Ce portfolio bilingue</h3>
-          <p>
-            Premier site de présentation réalisé en HTML/CSS sans générateur automatique, hébergé 
-            sur GitHub Pages pour apprendre les bases de la publication Web.
-          </p>
-          <div class="tags">
-            <span class="tag">HTML5</span>
-            <span class="tag">CSS3</span>
-            <span class="tag">GitHub Pages</span>
+
+        <div class="card project-card">
+          <div class="project-img-wrap">
+            <img class="project-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Code Web sur écran">
+          </div>
+          <div class="project-content">
+            <span class="card-label">SAÉ 104 — IUT Béziers</span>
+            <h3>Ce portfolio bilingue</h3>
+            <p>
+              Premier site de présentation réalisé en HTML/CSS sans générateur automatique, hébergé
+              sur GitHub Pages pour apprendre les bases de la publication Web.
+            </p>
+            <div class="tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">GitHub Pages</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="parcours">
-      <h2>Parcours & Centres d'intérêt</h2>
+    <section id="parcours" class="reveal">
+      <div class="section-header">
+        <i data-lucide="graduation-cap"></i>
+        <h2>Parcours & Centres d'intérêt</h2>
+      </div>
       <p class="section-sub">Ma formation actuelle et ce qui m'anime en dehors des cours.</p>
-      <div class="timeline" style="margin-bottom: 2rem;">
+      <div class="timeline">
         <div class="timeline-item">
-          <div class="timeline-date">Depuis septembre 2026</div>
+          <div class="timeline-date"><i data-lucide="calendar"></i> Depuis septembre 2026</div>
           <div class="timeline-title">BUT Réseaux et Télécommunications (1ère année)</div>
           <p>IUT de Béziers — Université de Montpellier</p>
         </div>
         <div class="timeline-item">
-          <div class="timeline-date">2025 — 2026</div>
+          <div class="timeline-date"><i data-lucide="calendar"></i> 2025 — 2026</div>
           <div class="timeline-title">Baccalauréat STI2D — Spécialité SIN</div>
           <p>Lycée Charles Renouvier, Prades (66)</p>
         </div>
@@ -136,21 +186,24 @@
 
       <div class="grid">
         <div class="card">
+          <div class="icon-box"><i data-lucide="cpu"></i></div>
           <h3>Hardware & Bidouille PC</h3>
           <p>Montage de PC, entretien matériel, configuration d'environnements Linux et résolution de pannes.</p>
         </div>
         <div class="card">
+          <div class="icon-box"><i data-lucide="trophy"></i></div>
           <h3>Sport</h3>
-          <p>Pratique du basketball en club, suivi de l'actualité sportive (basket et football).</p>
+          <p>Suivi de l'actualité sportive (basketball et football) et pratique sportive.</p>
         </div>
         <div class="card">
+          <div class="icon-box"><i data-lucide="gamepad-2"></i></div>
           <h3>Culture numérique</h3>
           <p>Veille technologique sur le matériel informatique, les jeux vidéo PC et les nouvelles technologies.</p>
         </div>
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="reveal">
       <div class="contact-box">
         <h2>Me contacter</h2>
         <p>
@@ -158,8 +211,8 @@
           Vous pouvez me joindre par mail professionnel ou sur LinkedIn.
         </p>
         <div class="cta-group">
-          <a href="mailto:adam.elomri@proton.me" class="btn btn-primary">Envoyer un e-mail</a>
-          <a href="https://www.linkedin.com/in/adam-e-38a553444/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Profil LinkedIn</a>
+          <a href="mailto:adam.elomri@proton.me" class="btn btn-primary"><i data-lucide="send"></i> Envoyer un e-mail</a>
+          <a href="https://www.linkedin.com/in/adam-e-38a553444/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i data-lucide="linkedin"></i> Profil LinkedIn</a>
         </div>
       </div>
     </section>
@@ -169,5 +222,16 @@
     © 2026 Adam El Omri — Portfolio réalisé dans le cadre de la SAÉ 104 (BUT R&T Béziers)
   </footer>
 
+  <script>
+    lucide.createIcons();
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
