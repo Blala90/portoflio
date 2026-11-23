@@ -1,21 +1,159 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mon portfolio</title>
-  <style>
-    body {
-      max-width: 720px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-      font-family: system-ui, sans-serif;
-      text-align: center;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adam El Omri — Portfolio BUT R&T</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Mon portfolio</h1>
-  <p>Le site est en ligne. Remplacez ce contenu par votre code HTML.</p>
+
+  <header>
+    <nav>
+      <a href="#" class="logo">Adam <span>El Omri</span></a>
+      <ul class="nav-links">
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="index-en.html" class="lang-btn">EN</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <span class="badge">Étudiant en BUT Réseaux & Télécommunications</span>
+      <h1>Adam El Omri</h1>
+      <p>
+        Étudiant en 1ère année à l'IUT de Béziers (Université de Montpellier).
+        Passionné par l'administration systèmes, les réseaux informatiques et la cybersécurité.
+      </p>
+      <div class="cta-group">
+        <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-secondary">Me contacter</a>
+      </div>
+    </section>
+
+    <section id="apropos">
+      <h2>À propos</h2>
+      <p>
+        Issu d'un Baccalauréat STI2D spécialité Systèmes d'Information et Numérique (SIN), je prépare actuellement
+        un BUT Réseaux et Télécommunications à l'IUT de Béziers. J'aime comprendre le fonctionnement concret des
+        infrastructures, administrer des environnements Linux et concevoir des solutions techniques fiables.
+        Mon objectif à terme est de me spécialiser dans la <strong>cybersécurité</strong>, le <strong>cloud</strong>
+        ou l'<strong>administration réseau</strong>.
+      </p>
+    </section>
+
+    <section id="competences">
+      <h2>Compétences techniques</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Réseaux & Télécoms</h3>
+          <ul>
+            <li>Architecture réseau & modèle OSI / TCP-IP</li>
+            <li>Analyse de trames et diagnostic réseau</li>
+            <li>Notions de VPN et sécurisation des échanges</li>
+            <li>Mesures électroniques & traitement du signal</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Systèmes & Hardware</h3>
+          <ul>
+            <li>Administration Linux (Debian, Ubuntu)</li>
+            <li>Services réseau : SSH, Samba, NIS</li>
+            <li>Virtualisation (VirtualBox) & dual-boot</li>
+            <li>Montage, diagnostic et maintenance PC</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Développement & Embarqué</h3>
+          <ul>
+            <li>Python, C++ (Arduino / ESP32)</li>
+            <li>HTML5 / CSS3 & hébergement GitHub Pages</li>
+            <li>Notions d'assembleur ARM</li>
+            <li>Modélisation CAO (Fusion 360, SolidWorks)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projets">
+      <h2>Projets réalisés</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Prototype de drone / dirigeable piloté en Wi-Fi</h3>
+          <p>
+            Conception et programmation d'un prototype contrôlé à distance via une interface Android personnalisée
+            dans le cadre de mon projet de Terminale STI2D SIN.
+          </p>
+          <div class="tags">
+            <span class="tag">ESP32</span>
+            <span class="tag">C++ / Arduino</span>
+            <span class="tag">Wi-Fi</span>
+            <span class="tag">Électronique</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Administration d'un environnement Linux</h3>
+          <p>
+            Déploiement et configuration de postes sous Debian/Ubuntu en travaux pratiques : mise en place
+            d'accès distants sécurisés (SSH), partage de fichiers (Samba) et gestion centralisée (NIS).
+          </p>
+          <div class="tags">
+            <span class="tag">Debian / Ubuntu</span>
+            <span class="tag">SSH</span>
+            <span class="tag">Samba</span>
+            <span class="tag">VirtualBox</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Portfolio Web bilingue (SAÉ 104)</h3>
+          <p>
+            Création d'un site de présentation statique sans framework, codé en HTML/CSS et déployé en HTTPS
+            via GitHub Pages pour maîtriser toute la chaîne de publication Web.
+          </p>
+          <div class="tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">GitHub Pages</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="parcours">
+      <h2>Parcours</h2>
+      <div class="timeline-item">
+        <div class="timeline-date">2026 — Présent</div>
+        <div class="timeline-title">BUT Réseaux et Télécommunications (1ère année)</div>
+        <p>IUT de Béziers — Université de Montpellier</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2025 — 2026</div>
+        <div class="timeline-title">Baccalauréat STI2D — Spécialité SIN</div>
+        <p>Lycée Charles Renouvier, Prades (66) — Grand Oral sur les protocoles sans fil et la cybersécurité en robotique.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p style="margin-bottom: 1.5rem;">
+        Vous pouvez me contacter par e-mail professionnel ou consulter mon profil LinkedIn pour échanger
+        autour des réseaux, des systèmes ou d'opportunités futures.
+      </p>
+      <div class="cta-group">
+        <a href="mailto:prenom.nom.pro@gmail.com" class="btn btn-primary">M'envoyer un e-mail</a>
+        <a href="https://www.linkedin.com/in/ton-profil/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Profil LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Adam El Omri — Portfolio réalisé dans le cadre de la SAÉ 104 (BUT R&T Béziers)
+  </footer>
+
 </body>
 </html>
